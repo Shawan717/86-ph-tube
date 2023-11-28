@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy & tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.6/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Assignment Six</title>
+    <style>
+        .body{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="container mx-auto">
+    <header>
+        
+        <nav class=" flex justify-center md:mt-5 md:gap-4 lg:flex lg:justify-between items-center lg:mt-8">
+           <div >
+               <img src="./image/Logo.png" alt="">
+           </div>
+           <div>
+            <button class="btn ml-8 btn-active text-[18px] font-medium">Sort by view</button>
+           </div>
+           <div>
+            <button onclick="blogClick()" class="btn mx-6 btn-error text-[18px] font-medium">Blog</button>
+           </div>
+           
+
+        </nav>
+        <hr class="my-8">
+    </header>
+    <main>
+        <div class="tab-container">
+         
+                <!-- <a role="tab" class="tab tabs-boxed p-3">Tab 1</a>text-center flex justify-center -->
+            <div id="button-container" class="flex  justify-center gap-10 mb-8">
+                <!-- <button class="btn btn-active btn-ghost hover:bg-[#FF1F3D]
+                hover:text-white">Ghost</button> -->
+                <!-- <button class="btn btn-active btn-ghost hover:bg-[#FF1F3D]
+                hover:text-white">Ghost</button>
+                <button class="btn btn-active btn-ghost hover:bg-[#FF1F3D]
+                hover:text-white">Ghost</button>
+                <button class="btn btn-active btn-ghost hover:bg-[#FF1F3D]
+                hover:text-white">Ghost</button> -->
+            </div>
+        
+                
+             
+        </div>
+
+        <section class="mb-7">
+            <!-- <p class="flex gap-2 text-[14px] text-[#171717b3]  font-normal">${data?.authors?.[0]?.profile_name} <img class="w-[20px] h-[20px]" src="${data?.authors?.[0]?.verified ? "./image/verified.png" : ""}" alt="">
+            </p>
+             -->
+             
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-auto w-[400px] md:w-[600px] lg:w-full">
+                <!-- <figure><img src="${}" alt="Shoes" /></figure>
+                <div class=" flex items-center gap-7">
+                  <div>
+                    <h2 class="card-title">Shoes!</h2>
+                  </div>
+                  <div>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>kd patak</p>
+                    <p>555</p>
+                  </div>
+                
+                </div> -->
+              </div>
+  
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
